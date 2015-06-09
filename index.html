@@ -1,5 +1,5 @@
    <!DOCTYPE html>
-<!-- Crossway - Startup Landing Page Template design by DSA79 (http://www.dsathemes.com) -->
+<!-- Adastic - New Media is coming to Israel -->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -11,7 +11,7 @@
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<title>Adastic - New Media is coming to Israel</title>
-		<meta name="author" content="DSA79">
+		<meta name="author" content="SHAN">
 		<meta name="keywords" content="media, new media, advertisment, application, startup, business, company, corporate, creative">
 		<meta name="description" content="Adastic - New Media is coming to Israel">		
 		
@@ -47,14 +47,6 @@
 	<body>
 	
 	
-		<!-- PRELOADER
-		============================================= -->
-				
-		<div id="preloader">
-			<div id="status"></div>
-		</div>
-	
-	
 		<!-- CONTENT WRAPPER
 		============================================= -->
 		
@@ -69,18 +61,19 @@
 				
 					<!-- Header -->		
 					<header id="header"> 
+
 						<div class="row">	
 
-							<div class="col-xs-5 col-md-5 pull-left">
-								<img src="img/logo_name.png" style="width: 300px; padding-top: 10px">
-							</div>
 							<!-- Logo Image -->
-							<div id="logo_image" class="col-xs-3 col-md-2">
-								<img src="img/logo.png" alt="logo" role="banner" class="logoimage">
+							<div id="logo_image" class="col-xs-12 col-sm-4 col-md-2 text-center">
+								<img src="img/logo_w150.png" alt="logo" role="banner">
 							</div>
-							<div class="col-xs-4 col-md-4 pull-right" style="text-align: right">
-								<img src="img/logo_name.png" style="width: 300px; padding-top: 10px">
+
+							<div id="logo_name" class="col-xs-12 col-sm-8 col-md-10 eng-logo">
+								<img src="img/logo_name_w361.png" >
 							</div>
+
+							<!-- <div class="col-xs-4 col-md-4 pull-right" style="text-align: right"></div> -->
 
 						</div>
 					</header>	
@@ -89,7 +82,7 @@
 					<div class="row">
 										
 						<!-- Intro Section Description -->		
-						<div id="intro_description_en" class="col-sm-6 col-md-6">
+						<div id="intro_description_en" class="col-xs-12 col-sm-6 col-md-6" style="display: none">
 						
 							<!-- Intro Section Title -->
 							<h1>The most New and Effective way to advertise in Israel</h1>
@@ -100,42 +93,48 @@
 						</div>	<!-- End Intro Section Description -->	
 										
 						<!-- Intro Section Description -->		
-						<div id="intro_description_he" class="col-sm-6 col-md-6">
+						<div id="intro_description_he" class="col-sm-12 col-md-12">
 						
 							<!-- Intro Section Title -->
-							<h1>פלטפורמת הפרסום החדשנית והחברתית ביותר בישראל</h1>
+							<h1>עוזרים לעסקים קטנים לצמוח</h1>
 
-							<h2>הצטרפו עכשיו לרשימת התפוצה שלנו, ושמעו על ההשקה לפני כולם</h2>
-						
-
+							<h2>כבעלים של עסק קטן, בוודאי ידועים לך הקשיים שבניהול העסק.<br />
+לנהל עסק קטן זו אופרציה שלמה שדורשת התמחות בתחומים רבים – שיווק, מכירות, ניהול קשרי לקוחות, כספים, לוגיסטיקה ומלאי, משאבי-אנוש, משפט ובירוקרטיה - והרשימה רק נמשכת.<br />
+הסטטיסטיקה לגבי עסקים קטנים שנסגרים כל שנה רק גוברת, אך החשיבות של העסקים הקטנים גם היא מתחזקת, שכן הם היסודות של הכלכלה הישראלית.
+אנחנו כאן כדי לעזור לעסק כמו שלך לצמוח!</h2>
 						</div>	<!-- End Intro Section Description -->	
-						
+					
+					</div>
 
-							
+					<div class="row">
 						<!-- Intro Section Form -->		
-						<div id="intro_form" class="col-sm-8 col-md-offset-3 col-md-6">
+						<div id="intro_form" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
 						
 							<!--Register form -->
 							<div class="form_register">
-								<h2>הירשמו עכשיו</h2>
+								<h2>רוצה שגם העסק שלך יצמח?</h2>
 								
 								<form action="contact.php" name="contactform" class="row" method="post">
 									
 									<div id="input_name" class="col-md-12">
-										<input id="name" class="form-control" type="text" name="first_name" placeholder="שם מלא"> 
+										<input id="sender_name" class="form-control" type="text" name="sender_name" placeholder="שם מלא" dir="rtl"> 
 									</div>
 										
 									<div id="input_email" class="col-md-12">
-										<input id="email" class="form-control" type="text" name="email" placeholder="הכנס כאן את כתובת האימייל שלך"> 
+										<input id="email" class="form-control" type="text" name="email" placeholder="כתובת אימייל"> 
 									</div>
 									
 									<div id="input_phone" class="col-md-12">
-										<input id="phone" class="form-control" type="text" name="phone" placeholder="מספר הטלפון שלך"> 
+										<input id="phone" class="form-control" type="text" name="phone" placeholder="טלפון"> 
+									</div>
+									
+									<div id="input_comments" class="col-md-12">
+										<textarea id="comments" class="form-control" type="text" name="comments" rows="2" placeholder="אופציונאלי - הצעות והערות"></textarea>
 									</div>
 			
 									<!-- Submit Button -->
 									<div id="form_register_btn" class="text-center">
-										<input class="btn btn-primary btn-lg" type="submit" value="הירשם" id="submit">
+										<input class="btn btn-primary btn-lg" type="submit" value="אישור" id="submit">
 									</div>  
 																	
 								</form>	
@@ -163,7 +162,7 @@
 							</ul>
 
 							<div id="footer_copy">
-								<p>&copy; Copyright 2014 <span>Adastic</span> All Right Reserved</p>
+								<p>&copy; Copyright 2015 <span>Adastic</span> All Right Reserved</p>
 							</div>							
 						</div>	<!-- End Footer Navigation Menu -->
 						
@@ -173,7 +172,8 @@
 						</div>	 <!-- End Footer Social Icons -->
 						
 						
-						<!-- Newsletter Form -->						
+						<!-- Newsletter Form -->
+						<!--						
 						<div class="col-md-4">							
 							<div id="newsletter_form" class="col-sm-12">
 								<div class="clearfix">
@@ -184,7 +184,9 @@
 								</div>	
 								<p id="newsletter-paragraph" class="pull-right">Join our newsletter subscription, <span>be always informed</span></p>
 							</div>
-						</div>	<!-- End Newsletter Form -->
+						</div>
+						-->	
+						<!-- End Newsletter Form -->
 						
 											
 					</div>	<!-- End row -->						

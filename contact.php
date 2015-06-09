@@ -5,11 +5,10 @@
 
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<title>Crossway - Startup Landing Page Template</title>
-		<meta name="author" content="DSA79">
-		<meta name="norobots" content="noindex,nofollow">
-		<meta name="keywords" content="responsive, html5 template, one page, landing, startup, business, company, corporate, creative">
-		<meta name="description" content="Crossway - Startup Landing Page Template">		
+		<title>Adastic - New Media is coming to Israel</title>
+		<meta name="author" content="SHAN">
+		<meta name="keywords" content="media, new media, advertisment, application, startup, business, company, corporate, creative">
+		<meta name="description" content="Adastic - New Media is coming to Israel">		
 		   
 		<!-- Libs CSS -->
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -32,15 +31,18 @@
 					 
 				// EDIT THE 2 LINES BELOW AS REQUIRED
 				 
-				$email_to = "you@yourdomain.com";
-				 
-				$email_subject = "Your email subject line";
+				$email_to = "info@adastic.com";
+				$email_subject = "New register form was sent";
 				 
 				   
-				$first_name = $_POST['first_name']; // required 
+				$sender_name = $_POST['sender_name']; // required 
 				$email_from = $_POST['email']; // required
-				$subject = $_POST['subject']; // required
-				$comments = $_POST['message']; // required
+				$phone = $_POST['phone']; // required
+				if("" == trim($_POST['comments'])){
+				    $comments = 'Message is empty';
+				} else {
+					$comments = $_POST['comments'];
+				}
 				 
 				$email_message = "Form details below.\n\n";
 				 
@@ -51,10 +53,10 @@
 				}
 				 
 				 
-				$email_message .= "Name: ".clean_string($first_name)."\n";
+				$email_message .= "Name: ".clean_string($sender_name)."\n";
 				$email_message .= "Email Address: ".clean_string($email_from)."\n";
-				$email_message .= "Subject: ".clean_string($subject)."\n";
-				$email_message .= "Message: ".clean_string($comments)."\n";
+				$email_message .= "Phone: ".clean_string($phone)."\n";
+				$email_message .= "Comments: ".clean_string($comments)."\n";
 				 
 					 
 				// create email headers
@@ -75,9 +77,9 @@
 						<div class="col-sm-6 col-sm-offset-3">
 							<div id="form_response" class="text-center">
 								<img class="img-responsive" src="img/thumbs/mail_sent.png" alt="image" />
-								<h1>Congratulations!!!</h1>
-								<p>Thank you <b><?=$first_name;?></b>, your message is sent!</p>
-								<a class="btn btn-primary btn-lg" href="index.html">Back To The Site</a>
+								<h1>הפרטים נשלחו בהצלחה !</h1>
+								<p>תודה לך <b><?=$sender_name;?></b>, הודעתך נשלחה ואנו נצור עימך קשר בהקדם.</p>
+								<a class="btn btn-primary btn-lg" href="index.html">חזרה לאתר</a>
 							</div>
 						</div>	
 					</div>					

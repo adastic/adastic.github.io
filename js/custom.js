@@ -2,32 +2,18 @@
 
 
 	/*----------------------------------------------------*/
-	/*	Preloader
-	/*----------------------------------------------------*/
-
-    $(window).load(function() {
-	
-		"use strict";	
-	
-       $('#status').delay(100).fadeOut('slow');
-       $('#preloader').delay(500).fadeOut('slow');
-       $('body').delay(500).css({'overflow':'visible'});
-	   
-	});
-	
-
-	/*----------------------------------------------------*/
 	/*	Parallax
 	/*----------------------------------------------------*/
+
 	$(window).bind('load', function() {
 	
 		"use strict";	
-		//parallaxInit();
+		parallaxInit();
 		
 	});
 
 	function parallaxInit() {
-		$('#intro').parallax("1000%", 3.6, false);	
+		$('#intro').parallax();
 	}
 	
 	
@@ -41,37 +27,40 @@
 
 		$(".form_register form").validate({
 			rules:{ 
-				first_name:{
+				sender_name:{
 					required: true,
 					minlength: 4,
 					maxlength: 16,
-					},
-					email:{
-						required: true,
-						email: true,
-					},
-					phone:{
-						required: true,
-						digits: true,
-					},	
-					message:{
-						required: true,
-						minlength: 2,
-						}
-					},
-					messages:{
-							email:{
-								required: "We need your email address to contact you",
-								email: "Your email address must be in the format of name@domain.com"
-							}, 
-							phone:{
-								required: "Please enter only digits",
-								digits: "Please enter a valid number"
-							}, 
-							message:{
-								required: "Please enter no more than (2) characters"
-							}, 
-						}
+				},
+				email:{
+					required: true,
+					email: true,
+				},
+				phone:{
+					required: true,
+					digits: true,
+				},	
+				comments:{
+					required: false,
+					minlength: 2,
+					}
+				},
+				messages:{
+						sender_name:{
+							required: "שם השולח נדרש"
+						}, 
+						email:{
+							required: "כתובת האימייל נדרשת על מנת שנוכל ליצור עמך קשר",
+							email: "כתובת האימייל לא בפורמט הנכון, כך כתובת אימייל נראית: name@domain.com"
+						}, 
+						phone:{
+							required: "ניתן להזין ספרות בלבד",
+							digits: "המספר שהוזן אינו תקין"
+						}, 
+						comments:{
+							minlength: "אורך השדה חייב להיות לפחות {0} תווים"
+						}, 
+					}
 		});			
 		
 	});

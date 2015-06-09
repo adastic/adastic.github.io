@@ -32,10 +32,21 @@ Tags: responsive, html5 template, one page, landing, startup, business, company,
    01. GENERAL & BASIC STYLES
    ========================================================================== */
 
-.vbottom {
-    display: inline-block;
-    vertical-align: bottom;
-    float: none;
+
+.eng-logo {
+	padding-top: 30px;
+	text-align: center;
+}
+
+@media (min-width: 767px) {
+	.eng-logo {
+	  	padding-top: 30px;
+	  	text-align: left;
+	}
+}
+
+::-webkit-input-placeholder {
+ text-align:right; 
 }
 
 
@@ -74,11 +85,12 @@ Tags: responsive, html5 template, one page, landing, startup, business, company,
 	background-attachment: fixed !important;
 	background-position: center center;
 	background-repeat: no-repeat;
+
 }
 
 #intro { 
-	background-image: url(../img/parallax_bg/path_bg.jpg); 
-	background-size: 100% auto;
+	background-image: url(../img/parallax_bg/back_8.jpg); 
+	/*background-size: 100% auto;*/
 }
 
 .parallax {
@@ -183,10 +195,10 @@ ul {
 }
 
 #header img {
-	/*SA padding: 0 15px;*/
-	/*NEW:*/
+	/*SA*/ padding: 0 15px;
+	/*NEW:
 	width: 100%;
-	height: 100%;
+	height: 100%;*/
 }
 
 .heb-logo{
@@ -354,7 +366,7 @@ textarea {
 }
 
 .form_register textarea {
-	min-height:140px;
+	min-height:70px;
 }
 
 /*------------------------------------------*/
@@ -885,7 +897,7 @@ textarea {
 }
 
 .subscribe-submit {
-	width: 32%;
+	width: 40%;
 	height: 30px;
 	background: #383e46;
     color: #fff;
